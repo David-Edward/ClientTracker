@@ -1,0 +1,19 @@
+{
+  "name": "clienttracker",
+  "version": "1.0.0",
+  "description": "Client Tracker software for freelancers",
+  "main": "./public/clients.js",
+  "scripts": {
+    "webpack": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "./.git"
+  },
+  "author": "David Edward",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.0.12"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Client Tracker</title>
+        <link rel="stylesheet" type="text/css" href="./public/clients.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+    </head>
+    
+    <body>
+    <header>
+        <div id="interfaceContainer">
+            <div class="flex-container">
+                <div id="logo">
+                    <img src="public/images/client-tracker-logo.svg" title="Client Tracker Logo" alt="Client Tracker Logo" />
+                </div>
+                    <button id="prompt"><h1 class="addit">Add a new client</h1><h1 class="hide">Never mind...</h1></button>
+            </div>
+            
+            <div class="data-div">
+                <form id="data-form" class="grid">
+                    <div class="flex gitem client-div">
+                        <h2>Client's Name:</h2>
+                        <div>
+                            <input type="text" class="client-first" placeholder="First" />
+                            <input type="text" class="client-last" placeholder="Last" />
+                        </div>
+                    </div>
+                    <div class="flex gitem service-div">
+                        <h2>Service Provided:</h2>
+                        <input type="text" class="service" placeholder="e.g. Tutoring, Graphic Design" />
+                    </div>
+                    <div class="flex gitem source-div">
+                        <h2>How client found you:</h2>
+                        <input type="text" class="source" placeholder="e.g. Wyzant, Upwork" />
+                    </div>
+                    <div class="flex gitem date-div">
+                        <h2>Date hired:</h2>
+                        <input type="date" class="date" />
+                    </div>
+                    <div class="flex gitem online-div">
+                        <h2>Online or in person?:</h2>
+                        <select class="online">
+                            <option value="online">online</option>
+                            <option value="in-person">in person</option>
+                        </select>
+                    </div>
+                    <div class="flex gitem location-div">
+                        <h2>Location:</h2>
+                        <div>
+                            <input type="text" class="client-city" placeholder="City" />
+                            <input type="text" class="client-state" placeholder="State" />
+                        </div>
+                    </div>
+                    <div class="flex gitem contact-div">
+                        <h2>Contact information:</h2>
+                        <div>
+                            <input type="text" class="client-email" placeholder="example@web.net" />
+                            <input type="tel" class="client-phone" placeholder="(XXX)XXX-XXXX" pattern="\([0-9]{3}\)[0-9]{3}-[0-9]{4}" />
+                        </div>
+                    </div>
+                    <div class="flex gitem subject-div">
+                        <h2>Subject or skill:</h2>
+                        <input type="text" class="subject" placeholder="e.g. calculus, illustration" />
+                    </div>
+                </form>
+                <button class="add-client" name="add-client">Add Client</button>
+            </div>
+            
+        </div>
+    </header>
+    
+    <section id="client-list">
+        
+    </section>
+        
+    <footer>
+        
+    </footer>
+    </body>
+    <script src="public/clients.js"></script>
+    <script src="public/clientsAnim.js"></script>
+    <script src="public/templates.js"></script>
+</html>
